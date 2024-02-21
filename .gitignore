@@ -1,0 +1,18 @@
+# SvelteKit outputs
+**/build
+**/.svelte-kit
+
+# Node dependencies
+**/node_modules
+
+# Pocketbase database
+**/pb_data
+
+# Do not include database
+pb_data
+
+# Env variables
+.env
+.env.*
+
+.DS_Store
