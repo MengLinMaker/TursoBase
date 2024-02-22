@@ -4,7 +4,9 @@
   "description": "Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
+    "testUnit": "vitest run unit.test",
+    "testLocal": "vitest run local.test",
+    "testRemote": "vitest run remote.test",
     "format": "prettier --no-semi --write ."
   },
   "keywords": [
@@ -17,7 +19,8 @@
     "@libsql/client": "^0.5.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "prettier": "^3.2.5"
+    "oxlint": "^0.2.10",
+    "prettier": "^3.2.5",
+    "vitest": "^1.3.1"
   }
 }
