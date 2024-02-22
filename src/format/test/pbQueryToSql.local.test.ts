@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest"
-import { readFileFormatted } from "../test/readFileFormatted"
-import { pbQueryToSql } from "./pbQueryToSql"
+import { readFileFormatted } from "../../test/readFileFormatted"
+import { pbQueryToSql } from "../pbQueryToSql"
 
 describe("pbQueryFormatter", () => {
   test("createTable", () => {

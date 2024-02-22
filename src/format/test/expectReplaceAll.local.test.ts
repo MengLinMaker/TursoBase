@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { expectReplaceAll } from "./expectReplaceAll"
+import { expectReplaceAll } from "../expectReplaceAll"
 
 describe("expectReplaceAll", () => {
   test("nothing to replace", () => {
