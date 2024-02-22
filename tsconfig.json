@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true
+  }
+}
