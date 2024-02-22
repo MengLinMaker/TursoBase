@@ -1,6 +1,6 @@
 import { expectReplaceAll } from "./expectReplaceAll"
 
-export const pbQueryFormatter = (pbQuery: string) => {
+export const pbQueryToSql = (pbQuery: string) => {
   // Remove PocketBase brackets [[]] {{}} in SQL
   let rawSql = pbQuery
     .replace(/\[\[([_a-z]+)\]\]/gi, "$1")
