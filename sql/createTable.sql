@@ -55,7 +55,3 @@ CREATE TABLE
     ---
     FOREIGN KEY (collectionId) REFERENCES _collections (id) ON UPDATE CASCADE ON DELETE CASCADE
   );
-
-CREATE UNIQUE INDEX IF NOT EXISTS _externalAuths_record_provider_idx on _externalAuths (collectionId, recordId, provider);
-
-CREATE UNIQUE INDEX IF NOT EXISTS _externalAuths_collection_provider_idx on _externalAuths (collectionId, provider, providerId);
