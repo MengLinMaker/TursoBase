@@ -21,6 +21,6 @@ export const getPbSetupLog = async (databaseDir: string, port: number) => {
     }
   })
   while (pbServed == false) await delay(100)
-  for (let i = 0; i < 3; i++) {}
+  pbProcess.kill()
   return pbStdout
 }
