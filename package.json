@@ -20,8 +20,8 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "test": "vitest local.test",
-    "testLocal": "vitest run local.test",
-    "testRemote": "vitest run remote.test",
+    "test:local": "vitest run local.test",
+    "test:remote": "vitest run remote.test",
     "format": "prettier --no-semi --write .",
     "lint": "oxlint --jest-plugin --import-plugin .",
     "tsc": "rm -rf dist && tsc"
