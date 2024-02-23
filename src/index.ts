@@ -29,7 +29,6 @@ export const tursoBase = (
       pbStdout = ""
     } else if (pbStdout.includes("http://")) {
       console.info("PocketBase served at:", pbUrl)
-      await fetch(pbUrl)
       pbServed = true
     }
   })
