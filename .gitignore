@@ -2,6 +2,9 @@
 .local
 .remote
 
+# Typescript output
+dist
+
 # Node dependencies
 **/node_modules
 

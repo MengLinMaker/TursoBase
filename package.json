@@ -2,7 +2,11 @@
   "name": "tursobase",
   "version": "0.1.0",
   "description": "Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/MengLinMaker/TursoBase.git"
@@ -12,7 +16,8 @@
     "testLocal": "vitest run local.test",
     "testRemote": "vitest run remote.test",
     "format": "prettier --no-semi --write .",
-    "lint": "oxlint --jest-plugin --import-plugin ."
+    "lint": "oxlint --jest-plugin --import-plugin .",
+    "tsc": "tsc --p tsconfig.json"
   },
   "keywords": [
     "pocketbase",
@@ -26,6 +31,7 @@
   "devDependencies": {
     "oxlint": "^0.2.10",
     "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
     "vitest": "^1.3.1"
   }
 }

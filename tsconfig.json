@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["esnext"],
-    "checkJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "outDir": "dist",
+    "module": "commonjs",
+    "declaration": true,
     "sourceMap": true,
-    "strict": true
-  }
+    "strict": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+  },
+  "include": [
+    "src"
+  ]
 }
