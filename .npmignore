@@ -1,0 +1,24 @@
+# Do not include sql scripts
+sql
+
+# Test folders
+.local
+.remote
+
+# Do not include test scripts
+**/test
+
+# Node dependencies
+**/node_modules
+
+# Env variables
+.env
+.env.*
+
+.DS_Store
+
+# Misc
+**/fullstack
+dockerfile
+.dockerignore
+compose.yml
