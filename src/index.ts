@@ -19,7 +19,7 @@ export const tursoBase = (
     `--dir=${databaseDir}`,
   ])
   pbProcess.stderr.on("data", async (stderr: Buffer) =>
-    console.error(stderr.toString()),
+    console.error("\x1B[31m" + stderr.toString()),
   )
   pbProcess.stdout.on("data", async (stdout: Buffer) => {
     pbStdout += stdout.toString()
@@ -28,7 +28,7 @@ export const tursoBase = (
       await tursoClient.executeMultiple(sql)
       pbStdout = ""
     } else if (pbStdout.includes("http://")) {
-      console.info("PocketBase served at:", pbUrl)
+      console.info("\x1B[32mPocketBase served at:", pbUrl)
       pbServed = true
     }
   })
