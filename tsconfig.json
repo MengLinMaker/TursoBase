@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist/esm",
     "declarationDir": "dist/types",
     "target": "ESNext",
     "lib": ["ESNext"],

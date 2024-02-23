@@ -1,6 +1,6 @@
 {
   "name": "tursobase",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.",
   "author": "menglinmaker",
   "license": "MIT",
@@ -18,21 +18,13 @@
   },
   "main": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    "main": "./dist/cjs/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "./dist/types/index.d.ts"
-  },
   "scripts": {
     "test": "vitest local.test",
     "testLocal": "vitest run local.test",
     "testRemote": "vitest run remote.test",
     "format": "prettier --no-semi --write .",
     "lint": "oxlint --jest-plugin --import-plugin .",
-    "tsc": "rm -rf dist && tsc -p ./tsconfig.cjs.json & tsc -p ./tsconfig.esm.json"
+    "tsc": "rm -rf dist && tsc"
   },
   "dependencies": {
     "@libsql/client": "^0.5.1"
