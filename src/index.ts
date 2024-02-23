@@ -15,7 +15,7 @@ export const tursoBase = (
   const pbProcess = spawn("pocketbase", [
     "serve",
     "--dev",
-    `--http="localhost:${port}"`,
+    `--http=localhost:${port}`,
     `--dir=${databaseDir}`,
   ])
   pbProcess.stderr.on("data", async (stderr: Buffer) =>
