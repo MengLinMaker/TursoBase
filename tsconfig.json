@@ -8,9 +8,7 @@
     "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
