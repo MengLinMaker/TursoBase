@@ -1,6 +1,6 @@
 {
   "name": "tursobase",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.",
   "author": "menglinmaker",
   "license": "MIT",
