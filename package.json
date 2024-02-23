@@ -1,15 +1,30 @@
 {
   "name": "tursobase",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "description": "Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
+  "author": "menglinmaker",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pocketbase",
+    "turso"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MengLinMaker/TursoBase.git"
+  },
+  "main": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/types/index.d.ts"
   },
   "scripts": {
     "test": "vitest local.test",
@@ -17,18 +32,13 @@
     "testRemote": "vitest run remote.test",
     "format": "prettier --no-semi --write .",
     "lint": "oxlint --jest-plugin --import-plugin .",
-    "tsc": "tsc --p tsconfig.json"
+    "tsc": "rm -rf dist && tsc -p ./tsconfig.cjs.json & tsc -p ./tsconfig.esm.json"
   },
-  "keywords": [
-    "pocketbase",
-    "turso"
-  ],
-  "author": "menglinmaker",
-  "license": "MIT",
   "dependencies": {
     "@libsql/client": "^0.5.1"
   },
   "devDependencies": {
+    "@types/node": "^20.11.20",
     "oxlint": "^0.2.10",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3",

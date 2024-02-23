@@ -1,4 +1,4 @@
-import { expectReplaceAll } from "./expectReplaceAll"
+import { expectReplaceAll } from "./expectReplaceAll.js"
 
 export const pbQueryToSql = (pbQuery: string) => {
   // Remove PocketBase brackets [[]] {{}} in SQL

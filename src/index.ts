@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process"
 import { Client } from "@libsql/client"
-import { pbQueryToSql } from "./format/pbQueryToSql"
-import { detectPbWriteQuery } from "./format/detectPbWriteQuery"
+import { pbQueryToSql } from "./format/pbQueryToSql.js"
+import { detectPbWriteQuery } from "./format/detectPbWriteQuery.js"
 
 export const tursoBase = (
   databaseDir: string,
