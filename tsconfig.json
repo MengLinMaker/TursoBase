@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["ESNext"],
+    "moduleResolution": "Bundler",
     "outDir": "dist",
-    "module": "commonjs",
     "declaration": true,
     "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
-    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,
   },
   "include": [
     "src"
