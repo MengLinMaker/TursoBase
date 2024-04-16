@@ -1,5 +1,7 @@
 # TursoBase
 
+**Recommend using an auth library instead. Eg: Lucia + Turso. Real time websockets are platform specific, so that would require some backend architecting**
+
 Sync your PocketBase data with Turso. This library enables distributed PocketBase with Turso primary database as master.
 
 Note: PocketBase is not designed to be distributed.
